@@ -11,8 +11,9 @@ function App() {
       {/* <ModelSlider/> */}
       
       <header className="App-header">
+        <ModelSlider/>
       {/* <ModelOne/> */}
-      <ModelTwo/>
+      {/* <ModelTwo/> */}
       </header>
     </div>
   );

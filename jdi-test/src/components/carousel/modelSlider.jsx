@@ -6,35 +6,15 @@ import ModelTwo from "../models3d/modelTwo";
 
 const ModelSlider = () =>{
     return(
-        <Carousel interval={null}>
-            <CarouselItem style={{
-                width: '100px',
-                height: '100px',
-            }}>
-                {/* <img src="sample2.jpg" alt="first "/> */}
-                {/* <ModelOne/> */}
-                {/* <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>this is a 3D model</p>
-                </Carousel.Caption> */}
+        <Carousel interval={null} style={{width: '100vw',height: '100vh'}}>
+            <CarouselItem style={{width: '100vw',height: '100vh'}}>
+                <ModelOne/>
             </CarouselItem>
-            <CarouselItem style={{
-                width: '100px',
-                height: '100px',
-            }}>
-                {/* <ModelTwo/> */}
-                {/* <img src="sample2.jpg" alt="second "/>
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>this is the second Image</p>
-                </Carousel.Caption> */}
+            <CarouselItem style={{width: '100vw',height: '100vh'}}>
+                <ModelTwo/>
             </CarouselItem>
             <CarouselItem>
-                <img src="sample2.jpg" alt="third "/>
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>this is the third Image</p>
-                </Carousel.Caption>
+               <ModelOne/>
             </CarouselItem>
         </Carousel>
     );
