@@ -7,7 +7,7 @@ import ModelTwo from "../models3d/modelTwo";
 const ModelSlider = () =>{
     return(
         <Carousel interval={null} style={{width: '100vw',height: '100vh'}}>
-            <CarouselItem style={{width: '100vw',height: '100vh'}}>
+            <CarouselItem style={{width: '100vw',height: '100vh'}} id="myItem"> 
                 <ModelOne/>
             </CarouselItem>
             <CarouselItem style={{width: '100vw',height: '100vh'}}>

@@ -9,6 +9,7 @@ const scene = new THREE.Scene();
 const loader = new GLTFLoader();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 const renderer = new THREE.WebGLRenderer();
+const canvas = document.getElementById("myItem");
 
 loader.load( './assets/shiba/scene.gltf', function ( gltf ) {
 
@@ -24,7 +25,9 @@ loader.load( './assets/shiba/scene.gltf', function ( gltf ) {
 //scene.add(camera);
 renderer.setSize( window.innerWidth, window.innerHeight );
 
-document.body.appendChild( renderer.domElement );
+document.body.appendChild(renderer.domElement);
+
+// canvas.appendChild( renderer.domElement );
 
 camera.position.z = 10;
 const animate = () => {
